@@ -7,18 +7,35 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Parisienne|Cabin">
     <link rel="stylesheet" href="/css/lib/normalize.css">
     <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
     <header>
+      <div class="container">
         <h1>
+          <i class="fa fa-newspaper-o"></i>
           Birdcall
         </h1>
+        <form id="search">
+          <div id="search-bar">
+            <input type="text" name="query" autocomplete="off"
+              placeholder="Search for a Twitter term or hashtag" />
+
+            <img src="/images/loading.gif" alt="Loading" class="loading-icon">
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+
+          <div id="search-results"></div>
+        </form>
+      </div>
     </header>
 
     <div class="error"></div>
     <div id="tweets"></div>
+    <div class="map"></div>
 
     <script type="text/x-handlebars-template" id="newsfeed-post-template">
       <div class="post">

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Birdcall</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Parisienne|Cabin">
+    <link rel="stylesheet" href="/css/lib/normalize.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+
+  <body>
+    <header>
+        <h1>
+          Birdcall
+        </h1>
+    </header>
+
+    <div class="error"></div>
+    <div id="tweets"></div>
+
+    <script type="text/x-handlebars-template" id="newsfeed-post-template">
+      <div class="post">
+        <div class="meta">
+          <h2>{{ text }}</h2>
+        </div>
+      </div>
+    </script>
+
+    <!-- Libraries -->
+    <script src="/js/lib/jquery.min.js"></script>
+    <script src="/js/lib/masonry.min.js"></script>
+    <script src="/js/lib/imagesloaded.min.js"></script>
+    <script src="/js/lib/handlebars.js"></script>
+
+    <!-- Helpers -->
+    <script src="/js/handlebars-helpers.js"></script>
+
+    <!-- Models -->
+    <script src="/js/update-model.js"></script>
+
+
+    <!-- Views -->
+    <script src="/js/main-view.js"></script>
+    <script src="/js/tweet-view.js"></script>
+
+    <!-- Main -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
